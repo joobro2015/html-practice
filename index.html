@@ -5,36 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        h1,
+        div{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <h1>알랜드</h1>
-        <section>
-
-            <h2>헤더</h2>
-            <div>메뉴버튼</div>
-        </section>
+        <h1 style="color:red;font-size: 11px;">알랜드</h1>
+        
+        <div>메뉴버튼</div>
     </hearder>
     
 
     <!-- --------------------------------------------------------------------------------------------- -->
-    <nav>
-        <h1>부안에 오면 꼭! 들리는 카페</h1>
-        <div>전체메뉴</div>
+    <nav class="cafe">
+        <h1 class="cafe-title">부안에 오면 꼭! 들리는 카페</h1>
+        <div><a class="cafe-title" href="">전체메뉴</a></div>
     
         <nav>
-        <h1>인기메뉴</h1>
+        <h1 class="d-none">인기메뉴</h1>
         <ul>
-            <li>딸기청</li>
-            <li>알랜드 아메리카노</li>
-            <li>버터쿠키</li>
+            <li>
+                <img height = "100" src = "./images/st.png" alt = "딸기청">
+                <a target = "_blank" href= "./menu/detail.html">딸기청</a>
+            </li>
+            <li>
+                <img height = "100" src = "./images/aa.png" alt = "알랜드아메리카노">
+                <a target = "_blank" href= "./menu/detail.html">아메리카노</a>
+            </li>
+            <li>
+                <img height = "100" src = "./images/cc.PNG" alt = "쿠키">
+                <a target = "_blank" href= "./menu/detail.html">쿠키</a>
+            </li>
         </ul>
         </nav>
 
 
         <div>알랜드 오시는 길</div>
     </nav>
+    ../../member.si
     
 
     <!-- --------------------------------------------------------------------------------------------- -->
