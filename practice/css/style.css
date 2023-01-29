@@ -14,3 +14,7 @@ a{
 .d-none{
     display: none;
 }
+
+.d-inline-block{
+    display: inline;
+}
