@@ -1,0 +1,39 @@
+.test-box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.test-box .header{
+    background-color: green;
+    height: 50px;
+}
+
+.test-box .body{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 300px;
+    flex-grow: 1;
+}
+    .body .aside{
+        width: 250px;
+        height: 300px;
+        flex-shrink: 0;
+        background-color: blue;
+        order: 2;
+    }
+
+    .body .main{
+        /* width: 250px; */
+        flex-grow: 1;
+        background-color: orange;
+        order: 1;
+        height: 300px;
+    }
+
+.test-box .footer{
+    height: 50px;
+    background-color: gray;
+    flex-shrink: 0;
+}

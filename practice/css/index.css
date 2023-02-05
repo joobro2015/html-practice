@@ -1,12 +1,35 @@
 @import url(style.css);
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Pen+Script&display=swap');
-.header-cafe-Bg-Box{
-    height: 530px;
-    background: #d4bfa0 url("../images/2.jpg") no-repeat -245px / cover;
-}
+
     .header{
+       
+        width: 100%;
+        /* 자동에서 수동으로 가면 넓이가 변한지 안변한지 체크하고 잡아줘야한다. */
         height: 50px;
+        background-color: #0002;
+
+        /* layout */
+
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+
+        /* item layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        /* paddig : 위아래 좌우 */
+        box-sizing: border-box;
+
     }
+
+    .header-title{
+        display: inline-block;
+        font-size: 12px;
+        color: #fff;
+    }
+
     .img-btn-menu{
         background-image: url("../images/menu.PNG");
         background-repeat: no-repeat;
@@ -20,8 +43,19 @@
     }
 
 .cafe{
-    height: 480px;
+    padding-top: 50px;
+    height: 530px;
+    background: #d4bfa0 url("../images/2.jpg") 
+    no-repeat -245px / cover;
+
+    /* item layout */
+    display: flex;
+    flex-direction: column;
 }
+
+    .rland-location{
+        margin-top: 19px;
+    }
 
 .cafe-title{
     font-family: 'Nanum Pen Script', cursive;
@@ -35,13 +69,24 @@
     text-align: center;
     line-height: 45px;
     border-radius: 20px;
+
+    margin-top: 23px;
+    margin-left: -14px;
     
 }
+.cafe-menu-all{
+    margin-top: auto;
+    align-self: flex-end;
+    margin-right: 5px;
+
+}
+
 .btn-cafe-menu-all{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: #fff;
+
 
     display: inline-block;
     padding: 4px 10px;
@@ -52,11 +97,71 @@
     text-align: center;
     line-height: 25px;
 }
+
+
+.top-menu{
+    padding: 31px 0;
+    background-color: #fff6;
+}
+
+.top-menu >ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+    .top-menu>ul>li{
+        list-style-type: none;
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+
+        margin-left: 20px;
+        flex-shrink: 0;
+    }
+
+    .top-menu li:first-child{
+        margin-left: 24px;
+    }
+
+    .top-menu>ul>li>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+
+    .top-menu>ul>li>a{
+        
+        width: 100%;
+        height: 100%;
+        border: 1px solid green;
+        text-align: center;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #0006;
+        color: #fff;
+    }
+
+    .top-menu li:hover>a{
+        position: relative;
+        top: -100%;
+    }
+
+
+
 .rland{
     height: 530px;
     overflow: scroll;
     background-color: bisque;
 }
+
+
     .btn-rland-location{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px;

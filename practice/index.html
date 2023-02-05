@@ -7,21 +7,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <div class="header-cafe-Bg-Box">
-    <header class="header">
-        <!-- <h1 class="header-title">알랜드</h1> -->
-        
-        <div><a class="img-btn-menu" href="">메뉴버튼</a></div>
-    </header>
+        <header class="header">
+            <h1 class="header-title">알랜드</h1>
+            
+            <div><a class="img-btn-menu" href="">메뉴버튼</a></div>
+        </header>
     
 
     <!-- --------------------------------------------------------------------------------------------- -->
     <nav class="cafe">
         <h1 class="cafe-title">부안에 오면 꼭! 들리는 카페</h1>
         <div class="cafe-menu-all"><a class="btn-cafe-menu-all" href="">전체메뉴</a></div>
-    
-        <!-- <nav class="top-menu d-inline-block">
+    <!-- block콘텐츠가 아니라 a태그같이 inline에 클래스를 주면 크기가 바뀌는데  
+        그 떄 크기를 조정하기위해서 display를 inline-block으로 설정해준다
+        또한 한줄로도 계속 쓸수있다.-->
+        <nav class="top-menu d-inline-block">
         <h1 class="d-none">인기메뉴</h1>
         <ul class="d-inline-block">
             <li>
@@ -37,12 +39,11 @@
                 <a target = "_blank" href= "./menu/detail.html">쿠키</a>
             </li>
         </ul>
-        </nav> -->
+        </nav>
         
 
         <div class="rland-location d-inline-block"><a class="btn-rland-location" href="">알랜드 오시는 길</a></div>
     </nav>
-</div>
 
     <!-- --------------------------------------------------------------------------------------------- -->
     <section class = "rland">
@@ -73,7 +74,7 @@
         <article> 
             <h1>다양한 로스팅으로 다채로운 맛을 느껴보세요</h1>
             <div><img src="./images/aa.PNG" alt="아메리카노"></div>
-         <p>콜롬비아산의 상큼한 맛, 과테말라산의 풍미,
+         <p>콜롬비아산의 상큼한 맛, 과 테말라산의 풍미,
             그 외에 5가지 이상의 다채로운 원두의 맛을 느껴보세요.</p>
         </article>   
 
