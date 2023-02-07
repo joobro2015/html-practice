@@ -1,4 +1,42 @@
+.grid{
+    display: grid;
+    
 
+
+
+    grid-template: 
+    "a b" 100px
+    "c d" 100px
+    /100px 100px;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.con1{
+    background-color: aqua;
+    align-self: stretch;
+    grid-area: a;
+}
+.con2{
+    background-color: blueviolet;
+    grid-area: b;
+    justify-self: end;
+    align-items: end;
+}
+.con3{
+    background-color: chartreuse;
+    grid-area: c;
+}
+
+.con4{
+    background-color: coral;
+    grid-area: d;
+}
+
+
+
+/* 
 .wrapper{
     display: grid;
     
@@ -83,4 +121,4 @@
 .grid-box>div:nth-child(2){
     background-color: green;
     width: 100%;
-}
+} */

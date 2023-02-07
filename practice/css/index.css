@@ -146,6 +146,13 @@
 
         background-color: #0006;
         color: #fff;
+
+        top: 0%;
+        /* transition을 주기위해 초기화를 시켜야한다. */
+
+        transition: 1s;
+
+
     }
 
     .top-menu li:hover>a{
@@ -153,12 +160,28 @@
         top: -100%;
     }
 
+/* 
+====================rland item====================*/
 
+.rland>article>div:nth-child(2){
 
-.rland{
-    height: 530px;
-    overflow: scroll;
-    background-color: bisque;
+    grid-area: img;
+}
+.rland>article>div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.rland>article{
+    background-color: gray;
+    display: grid;
+    grid-template: 
+    "img title" 35px
+    "img content" 65px
+    / 100px 1fr;
+    grid-column-gap: 20px;
 }
 
 
